@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum OrderStatus {
+  COMPLETE
+  PENDING
+}
+
+model Order {
+  id            String      @id @default(uuid()) @map("_id")
+  status        OrderStatus
+  chatId        String
+  txId          String
+  buyerName     String?
+  buyerUser     String?
+  remarketStage Int         @default(0)
+  chargeId      String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Log {
+  id        String   @id @default(uuid()) @map("_id")
+  sales     Int
+}
