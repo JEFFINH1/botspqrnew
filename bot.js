@@ -144,7 +144,7 @@ class BotController {
 
         await ctx.reply('🤖 𝗚𝗲𝗿𝗮𝗻𝗱𝗼 seu 𝗣𝗮𝗴𝗮𝗺𝗲𝗻𝘁𝗼... Aguarde!')
 
-        const amount = '0.10'
+        const amount = '9.90'
         const email = 'usuario@example.com' // Você pode ajustar para capturar o email real do usuário
         const name = userName
         const cpf = '08541172023' // Você pode ajustar para capturar o CPF real do usuário
