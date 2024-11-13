@@ -605,7 +605,7 @@ class BotController {
     try {
       await this.bot.telegram.sendMessage(
         chat_id,
-        'Grupo VIP 👇\nhttps://t.me/+NvEVEfw0kuE4NmU5 \n\nBrinde 1 👇\nhttps://t.me/You_Sexybeach \n\nBrinde 2 👇\nhttps://t.me/+__MUqkeNEqA1NDk0 \n\nBrinde 3 👇\nhttps://t.me/joinchat/BHQ95nfIP6YwZDk6 \n\n'
+        'Grupo VIP 👇\nhttps://t.me/+2YJaTnF1kBkwN2Mx \n\nBrinde 1 👇\nhttps://t.me/You_Sexybeach \n\nBrinde 2 👇\nhttps://t.me/+__MUqkeNEqA1NDk0 \n\nBrinde 3 👇\nhttps://t.me/joinchat/BHQ95nfIP6YwZDk6 \n\n'
       )
     } catch (error) {
       if (error.response && error.response.statusCode === 403) {
